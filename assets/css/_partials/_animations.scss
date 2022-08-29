@@ -1,0 +1,25 @@
+//animations
+
+.wave-1{
+  animation: fig-waves 8s ease infinite alternate;
+}
+.wave-2{
+  animation: fig-waves 8s ease infinite .5s alternate;
+}
+.wave-3{
+  animation: fig-waves 8s ease infinite 1s alternate;
+}
+
+
+@keyframes fig-waves{
+  0%{
+      transform: translate3d(0,0,0);
+  }
+  50%{
+    
+      transform: translate3d(-20px,0,0) scale(1.5);
+  }
+  100%{
+      transform: translate3d(80px,0,0) scale(1.1);
+  }
+}

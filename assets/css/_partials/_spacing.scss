@@ -1,0 +1,73 @@
+// Paddings and margins
+
+$gaps: (
+  "gap-1": 8px,
+  "gap-2": 16px,
+  "gap-3": 20px,
+  "gap-4": 24px,
+  "gap-5": 32px,
+  "gap-6": 48px,
+  "gap-7": 64px,
+  "gap-8": 72px,
+  "gap-9": 128px,
+  "gap-10": 256px,
+);
+
+.s-0 {
+  margin: 0;
+  padding: 0;
+}
+
+@for $m from 1 to 11 {
+  .m-#{$m} {
+    margin: map-get($gaps, #{"gap-" + $m});
+  }
+
+  .mt-#{$m} {
+    margin-top: map-get($gaps, #{"gap-" + $m});
+  }
+  .ml-#{$m} {
+    margin-left: map-get($gaps, #{"gap-" + $m});
+  }
+  .mr-#{$m} {
+    margin-right: map-get($gaps, #{"gap-" + $m});
+  }
+  .mb-#{$m} {
+    margin-bottom: map-get($gaps, #{"gap-" + $m});
+  }
+  .mx-#{$m} {
+    margin-left: map-get($gaps, #{"gap-" + $m});
+    margin-right: map-get($gaps, #{"gap-" + $m});
+  }
+
+  .my-#{$m} {
+    margin-top: map-get($gaps, #{"gap-" + $m});
+    margin-bottom: map-get($gaps, #{"gap-" + $m});
+  }
+}
+@for $p from 1 to 11 {
+  .p-#{$p} {
+    padding: map-get($gaps, #{"gap-" + $p});
+  }
+  .pt-#{$p} {
+    padding-top: map-get($gaps, #{"gap-" + $p});
+  }
+  .pl-#{$p} {
+    padding-left: map-get($gaps, #{"gap-" + $p});
+  }
+  .pr-#{$p} {
+    padding-right: map-get($gaps, #{"gap-" + $p});
+  }
+  .pb-#{$p} {
+    padding-bottom: map-get($gaps, #{"gap-" + $p});
+  }
+  .px-#{$p} {
+    padding-left: map-get($gaps, #{"gap-" + $p});
+    padding-right: map-get($gaps, #{"gap-" + $p});
+  }
+
+  .py-#{$p} {
+    padding-top: map-get($gaps, #{"gap-" + $p});
+    padding-bottom: map-get($gaps, #{"gap-" + $p});
+  }
+}

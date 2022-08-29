@@ -1,10 +1,13 @@
+@import "./_partials/reset";
 @import "./_partials/font";
 
-h1 {
-  font-family: "Satoshi-Variable";
-  font-size: 5rem;
-}
+@import "./_partials/colors";
+@import "./_partials/layout";
+@import "./_partials/typography";
+@import "./_partials/spacing";
 
-h2 {
-  font-family: "ClashDisplay-Variable";
-}
+
+@import './_partials/animations';
+@import './_partials/menu';
+
+
