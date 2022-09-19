@@ -52,7 +52,7 @@
   margin-top: 32px;
 
   .link-social {
-    font-family: "Satoshi-Variable";
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -68,21 +68,20 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 100%;
-      transform: scale(0);
       height: 45%;
       background: linear-gradient(270deg,
           $primary-light 0%,
           rgba(117, 92, 239, 0) 100%);
       opacity: 0.8;
-      transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-      transform-origin: bottom right;
+      transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+      width: 0;
+
     }
 
     &:hover {
       &::after {
-        transform: scale(1);
-        transform-origin: bottom left;
+        width: 100%;
+
       }
     }
   }
@@ -92,7 +91,7 @@
   margin-top: 32px;
 
   .link-menu {
-    font-family: "Satoshi-Variable";
+    font-family: "inter";
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
