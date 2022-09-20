@@ -182,9 +182,10 @@ $container-s: 540px;
 .main {
 
   background: #F5ECFD;
-  height: 100vh;
-  padding-top: 128px;
-
+  // padding: 128px 0 400px 0;
+padding-top: 20vh ;
+padding-bottom: 400px;
+height: 80vh;
   .container {
     display: flex;
     max-width: $container-xl;
@@ -252,7 +253,7 @@ $container-s: 540px;
 
 
   .more-projects {
-    font-family: 'Satoshi-Variable', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -265,14 +266,27 @@ $container-s: 540px;
 
 
 
+
+
+
     &::after {
+      transition: all .5s ease;
+      transform: scale(0);
+      width: 100%;
       bottom: -16px;
       content: '';
       position: absolute;
       display: block;
       height: 4px;
-      background: $primary-normal;
-      width: 100%;
+      background: #9638EA;
+    }
+    
+
+
+    &:hover{
+      &::after{
+        transform: scale(1);
+      }
     }
 
   }
@@ -342,8 +356,8 @@ $container-s: 540px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    color: #9638EA;
     line-height: 27px;
-    color: $gray-3;
     font-family: 'Inter', sans-serif;
     position: relative;
     display: inline-block;
@@ -352,7 +366,7 @@ $container-s: 540px;
     &.in-progress {
       opacity: 0.5;
       pointer-events: none;
-
+      color: $gray-3;
 
     }
 
@@ -366,7 +380,7 @@ $container-s: 540px;
       transform: scale(0);
       transition: all .5s ease;
       transform-origin: left center;
-      background: $primary-normal;
+      background:#9638EA;
     }
 
 
@@ -382,8 +396,6 @@ $container-s: 540px;
 
   &-image {
     max-width: 640px;
-
-
 
   }
 }
