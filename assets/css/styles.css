@@ -125,7 +125,7 @@ img {
 }
 
 .header {
-  background: #F5ECFD;
+  background: #f5ecfd;
 }
 .header .container {
   max-width: 1312px;
@@ -147,7 +147,7 @@ img {
 }
 
 .main {
-  background: #F5ECFD;
+  background: #f5ecfd;
   padding: 128px 0 400px 0;
 }
 .main .container {
@@ -162,10 +162,10 @@ img {
   font-size: 20px;
   line-height: 23px;
   font-family: "Roboto";
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 .main h1 {
-  color: #1B1B1B;
+  color: #1b1b1b;
 }
 .main svg {
   max-width: 525px;
@@ -185,7 +185,7 @@ img {
   transition: all 0.5s ease;
 }
 .social-list .social-icon:hover path {
-  stroke: #755CEF;
+  stroke: #755cef;
 }
 
 .projects {
@@ -220,7 +220,7 @@ img {
   position: absolute;
   display: block;
   height: 4px;
-  background: #9638EA;
+  background: #9638ea;
 }
 .projects .more-projects:hover::after {
   transform: scale(1);
@@ -246,7 +246,7 @@ img {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
-  color: #E6E6E6;
+  color: #e6e6e6;
 }
 .project .content p {
   font-style: normal;
@@ -268,7 +268,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  color: #9638EA;
+  color: #9638ea;
   line-height: 27px;
   font-family: "Inter", sans-serif;
   position: relative;
@@ -289,7 +289,7 @@ img {
   transform: scale(0);
   transition: all 0.5s ease;
   transform-origin: left center;
-  background: #9638EA;
+  background: #9638ea;
 }
 .project-link:hover::before {
   transform: scale(1);
@@ -322,7 +322,7 @@ img {
   background: transparent;
   border: 2px solid #fff;
   display: flex;
-  color: #F5ECFD;
+  color: #f5ecfd;
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
@@ -370,7 +370,7 @@ img {
   font-size: 32px;
   cursor: pointer;
   line-height: 38px;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
 }
 .skills-header label::after {
@@ -382,7 +382,7 @@ img {
   height: 40%;
   width: 0;
   opacity: 0.5;
-  background: #9333EA;
+  background: #9333ea;
 }
 .skills .container-language {
   display: flex;
@@ -394,7 +394,7 @@ img {
   font-size: 36px;
   line-height: 150%;
   text-transform: uppercase;
-  color: #E6E6E6;
+  color: #e6e6e6;
 }
 .skills .language p {
   max-width: 527px;
@@ -402,19 +402,28 @@ img {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  color: #C9C9C9;
+  color: #c9c9c9;
 }
 .skills .languages {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
 }
-.skills .languages svg, .skills .languages img {
+.skills .languages.active {
+  display: grid;
+}
+.skills .languages svg,
+.skills .languages img {
   width: 128px;
   transition: all 0.5s ease;
   opacity: 0.5;
 }
-.skills .languages svg:hover, .skills .languages img:hover {
+.skills .languages svg.active,
+.skills .languages img.active {
+  opacity: 1;
+}
+.skills .languages svg:hover,
+.skills .languages img:hover {
   opacity: 1;
 }
 
