@@ -30,7 +30,10 @@ const skills = {
     name: "mongo",
     description: lorem,
   },
-  typescript: { name: "typescript", description: lorem },
+  typescript: {
+    name: "typescript",
+    description: lorem
+  },
   node: {
     name: "node",
     description: lorem,
@@ -56,9 +59,9 @@ const iconBackEnd = document.querySelectorAll(".icon-back-end");
 let lastActiveFront;
 let lastActiveBack;
 
-const input = document.querySelector("form");
+const form = document.querySelector("form");
 
-input.addEventListener("change", (e) => {
+form.addEventListener("change", (e) => {
   if (e.target.value == "front") {
     document.querySelector(".languages#front-end").classList.add("active");
     document.querySelector(".languages#back-end").classList.remove("active");
@@ -107,7 +110,6 @@ iconBackEnd.forEach((element) => {
 });
 
 function activeIcon(iconName) {
-  const icon = document.querySelector(`[data-name="${iconName}"]`);
   languageName.textContent = skills[iconName].name;
   languageDescription.textContent = skills[iconName].description;
 }

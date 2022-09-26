@@ -22,6 +22,12 @@
       left: 0;
     }
   }
+
+
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+
+  }
 }
 
 .menu-links {
@@ -31,11 +37,20 @@
   background: $black-light;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.25fr;
   position: relative;
   left: 300px;
   top: 0;
   transition: all 0.5s ease;
+
+  @include responsive(m) {
+    padding: 64px;
+
+  }
+
+  @include responsive(s) {
+    padding: 32px;
+  }
+
 }
 
 .link-title {
@@ -47,6 +62,12 @@
   line-height: 25px;
 
   color: $gray-3;
+
+  @include responsive(l) {
+    font-size: 18px;
+
+  }
+
 }
 
 .nav-social {
@@ -86,6 +107,16 @@
       }
     }
   }
+
+  @include responsive(l) {
+    margin-top: 0px;
+
+    .link-social {
+      font-size: 18px;
+
+    }
+
+  }
 }
 
 .nav-link {
@@ -121,6 +152,15 @@
       }
     }
   }
+
+  @include responsive(l) {
+    margin-top: 0px;
+
+    .link-menu {
+      font-size: 28px;
+    }
+
+  }
 }
 
 .menu-contact {
@@ -139,21 +179,20 @@
 
 .close-menu {
   position: fixed;
-  top: 50%;
-  right: 50%;
-  transform: translateX(-64px);
+  top: 0;
+  left: 0;
   background: $black-light;
-  padding: 32px;
+  padding: 16px;
 
   border-radius: 50%;
-  border: 4px solid $gray-1;
+  // border: 2px solid $gray-1;
 
   cursor: pointer;
   transition: 0.3s ease;
 
   img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 
   &:hover {
