@@ -271,7 +271,7 @@ $container-s: 540px;
   margin: 200px auto 0;
 
   p {
-    width: 539px;
+    max-width: 539px;
 
     font-size: 20px;
     line-height: 27px;
@@ -523,8 +523,7 @@ $container-s: 540px;
 .skills {
   max-width: $container-xl;
   margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
+
 
   &-header {
     display: flex;
@@ -575,8 +574,13 @@ $container-s: 540px;
 
   .container-language {
     display: flex;
-    align-items: center;
+    align-items: center;flex-direction: column;
     justify-content: space-between;
+    @include responsive(xl) {
+      flex-direction: row;
+      
+    }
+   
   }
 
   .language {
@@ -603,7 +607,7 @@ $container-s: 540px;
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
-
+margin-top: 32px;
     &.active {
       display: grid;
     }
@@ -622,7 +626,12 @@ $container-s: 540px;
         opacity: 1;
       }
     }
+
+    @include responsive(xl) {
+    }
   }
+
+
 }
 
 .contact {
