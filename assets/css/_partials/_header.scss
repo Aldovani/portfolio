@@ -1,0 +1,126 @@
+.header {
+  width: 100%;
+  @include container();
+  padding-top: 3.2rem;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation-links {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  .navigation-link {
+    color: map-get($colors, "gray", "500");
+    font-family: Inter;
+    font-size: 1.6rem;
+    position: relative;
+    display: block;
+    overflow-y: hidden;
+
+    &::after {
+      content: attr(data-css-name);
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: -100%;
+      transition: all 0.3s ease;
+      color: map-get($colors, "primary", "light");
+    }
+
+    span {
+      display: block;
+      transition: all 0.3s ease;
+      transform: translateY(0);
+    }
+
+    &:hover {
+      span {
+        display: block;
+        transform: translateY(-100%);
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 100%;
+    background: map-get($colors, "primary", "gradient");
+  }
+
+  .button-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid map-get($colors, "gray", "300");
+    transition: all 0.3s ease;
+    position: relative;
+    background: transparent;
+
+    .icon-menu {
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 3;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      transition: all 0.3s ease-out;
+      height: 100%;
+      border-radius: 100%;
+      z-index: 2;
+      transform: scale(0);
+    }
+
+    &:hover {
+      &::after {
+        background: map-get($colors, "primary", "main");
+        transform: scale(1);
+      }
+      .icon-menu {
+        stroke: map-get($colors, "gray", "100");
+      }
+    }
+  }
+
+  @include responsive("sm") {
+    .button-menu {
+      display: flex;
+    }
+
+    .navigation-links {
+      display: none;
+      .open {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background: map-get($colors, "background", "main");
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .navigation-link {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}

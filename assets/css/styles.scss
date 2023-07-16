@@ -1,3 +1,7 @@
-@import "./_partials/colors";
-@import "./_partials/reset";
+@use "sass:map";
 
+@import "./_partials/variables";
+@import "./_partials/reset";
+@import "./_partials/layout";
+
+@import "./_partials/header";
