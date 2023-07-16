@@ -1,0 +1,26 @@
+$colors: (
+  "primary": (
+    "main": #11366d,
+    "light": #1361b6,
+    "gradient": linear-gradient(135deg, #0c3d7f 0%, #123259 100%),
+  ),
+  "gray": (
+    "100": #f1f5f9,
+    "300": #CBD5E1,
+    "500": #64748b,
+    "600": #475569,
+    "900": #0f172a,
+  ),
+  "background": (
+    "light": #fff,
+    "main": #f8fafc,
+  ),
+);
+
+$breakpoints: (
+  "xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1216px,
+);
