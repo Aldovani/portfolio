@@ -123,4 +123,9 @@
       }
     }
   }
+
+  @include responsive("xs") {
+    @include container(100%, 16px);
+    padding-top: 16px;
+  }
 }
