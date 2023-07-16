@@ -1,0 +1,108 @@
+.main {
+  @include container();
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 42px);
+  padding-top: 12rem;
+
+  .had-text {
+    color: map-get($colors, "gray", "600");
+    font-family: Inter;
+    font-size: 1.6rem;
+  }
+  .title {
+    color: map-get($colors, "gray", "900");
+    text-align: center;
+    font-family: Poppins;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 120%; /* 7.68rem */
+    max-width: 92.6rem;
+    position: relative;
+    margin: 1.2rem 0 2.4rem;
+
+    span {
+      color: map-get($colors, "primary", "main");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 64.6rem;
+      height: 0.9rem;
+      bottom: 0;
+      right: 0;
+
+      border-radius: 11.3rem;
+      background: linear-gradient(
+        90deg,
+        #0c3d7f 0%,
+        rgba(18, 50, 89, 0.5) 100%
+      );
+    }
+  }
+  p {
+    color: map-get($colors, "gray", "500");
+    text-align: center;
+    font-family: Inter;
+
+    font-size: 2rem;
+    line-height: 150%; /* 3rem */
+    max-width: 65.6rem;
+    margin-bottom: 3.2rem;
+  }
+  .wrapper-buttons {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  @include responsive(lg) {
+    .title {
+      font-size: 4.8rem;
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive(sm) {
+    .had-text {
+      font-size: 1.4rem;
+    }
+    .title {
+      font-size: 3.2rem;
+      margin: 1.2rem 0 1.6rem;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  @include responsive(xs) {
+    @include container(100%, 16px);
+    padding-top: 64px;
+
+    .had-text {
+      font-size: 1.2rem;
+    }
+    .title {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2.4rem;
+    }
+    .wrapper-buttons {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+
+      svg {
+        width: auto;
+      }
+    }
+  }
+}
