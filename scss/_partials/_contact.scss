@@ -1,0 +1,131 @@
+#contact {
+  border-top: 1px solid #cbd5e1;
+  padding-top: 12rem;
+  padding-bottom: 10.4rem;
+  background: map-get($colors, "background", "main");
+
+  .container {
+    @include container();
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .subtitle {
+    text-align: center;
+    margin: 1.6rem 0 2.4rem;
+  }
+  .status {
+    color: #1361b6;
+    font-family: Inter;
+    font-size: 2rem;
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.2rem;
+      height: 1.2rem;
+      position: absolute;
+      background: #1361b6;
+      border-radius: 100%;
+      top: 50%;
+      left: 0;
+
+      transform: translateY(-50%) translateX(calc(-13px + -100%));
+    }
+  }
+
+  h3 {
+    color: #0f172a;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 5.76rem */
+
+    margin: 4rem 0 6.4rem;
+  }
+
+  .links {
+    @include flex(row, center, center);
+
+    max-width: 52.5rem;
+    gap: 1.6rem 3.2rem;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    color: #64748b;
+    font-family: Inter;
+    font-size: 2rem;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    gap: 0.8rem;
+    z-index: 1;
+
+    border-radius: 3.5rem;
+    border: 1px solid #cbd5e1;
+    background: transparent;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+
+    svg,
+    .behance-icon {
+      color: #1361b6;
+      transition: all 0.3s ease;
+    }
+
+    &::after {
+      content: "";
+      inset: 100% 0;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      border-radius: 3.5rem;
+      height: 100%;
+      width: 100%;
+      background: #1361b6;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      &::after {
+        inset: 0;
+      }
+
+      svg {
+        color: map-get($colors, "gray", "100");
+      }
+      .behance-icon {
+        fill: map-get($colors, "gray", "100");
+      }
+      color: map-get($colors, "gray", "100");
+    }
+  }
+
+  @include responsive(sm) {
+    h3 {
+      font-size: 2rem;
+    }
+
+    ul,
+    li {
+      width: 100%;
+    }
+    svg {
+      width: auto;
+    }
+    .link {
+      justify-content: center;
+    }
+  }
+}

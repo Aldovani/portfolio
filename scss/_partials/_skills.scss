@@ -1,0 +1,79 @@
+#skills {
+  background: map-get($colors, "background", "light");
+
+  .container {
+    > div {
+      display: flex;
+      margin-top: 32px;
+      justify-content: space-between;
+    }
+  }
+
+  .subtitle {
+    margin-top: 16px;
+  }
+
+  .paragraph {
+    max-width: 59.2rem;
+    margin-bottom: 12px;
+  }
+
+  .wrapper-skills {
+    max-width: 48.8rem;
+    width: 100%;
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin-bottom: 40px;
+    }
+  }
+
+  .area {
+    color: #64748b;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .list {
+    width: 100%;
+    display: flex;
+    gap: 2rem 1.6rem;
+    flex-wrap: wrap;
+  }
+  .skill {
+    color: #1361b6;
+    font-family: Inter;
+    font-size: 1.6rem;
+    letter-spacing: 0.32rem;
+    text-transform: uppercase;
+
+    padding: 0.8rem 1.6rem;
+
+    border-radius: 3.5rem;
+    border: 1px solid #cbd5e1;
+  }
+
+  @include responsive(lg) {
+    .container {
+      > div {
+        flex-direction: column;
+      }
+    }
+    .wrapper-skills {
+      margin-top: 32px;
+      max-width: 100%;
+    }
+  }
+
+
+  @include responsive(sm) {
+    .skill{
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

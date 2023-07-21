@@ -1,0 +1,16 @@
+@use "sass:map";
+
+@import "./_partials/variables";
+@import "./_partials/reset";
+@import "./_partials/layout";
+@import "./_partials/typography";
+@import "./_partials/components";
+@import "./_partials/animations";
+
+@import "./_partials/header";
+@import "./_partials/main";
+@import "./_partials/about";
+@import "./_partials/projects";
+@import "./_partials/skills";
+@import "./_partials/contact";
+@import "./_partials/footer";

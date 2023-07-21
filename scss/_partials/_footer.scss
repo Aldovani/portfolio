@@ -1,0 +1,65 @@
+#footer {
+  padding: 48px 0 32px;
+  border-top: 1px solid #cbd5e1;
+  background: #fff;
+  .container {
+    @include flex(row, center, space-between);
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  h3 {
+    color: #0f172a;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  span {
+    color: #64748b;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 120%; /* 1.68rem */
+  }
+
+  p {
+    color: #64748b;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 1.92rem */
+  }
+
+  .icon {
+    padding: 0.8rem;
+    color: aliceblue;
+    display: block;
+    border-radius: 3.3rem;
+    background: linear-gradient(135deg, #0c3d7f 0%, #123259 100%);
+  }
+
+  @include responsive(lg) {
+    .container {
+      flex-direction: column;
+      gap: 32px;
+
+      div {
+        text-align: center;
+      }
+    }
+  }
+
+  @include responsive(sm) {
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

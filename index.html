@@ -12,35 +12,41 @@
       rel="stylesheet"
     />
     <title>Aldovani</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="scss/styles.css" />
 
-    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
 
   <body>
-    <header class="header">
+    <header class="container" id="header">
       <nav>
-        <div class="logo"></div>
+        <div class="logo slide-up"></div>
 
         <ul class="navigation-links">
           <li>
-            <a href="" data-css-name="About" class="navigation-link">
+            <a href="#about" data-css-name="About" class="navigation-link">
               <span> About </span>
             </a>
           </li>
+
           <li>
-            <a href="" data-css-name="Projects" class="navigation-link">
+            <a
+              href="#projects"
+              data-css-name="Projects"
+              class="navigation-link"
+            >
               <span> Projects </span>
             </a>
           </li>
+
           <li>
-            <a href="" data-css-name="Skills" class="navigation-link">
+            <a href="#skills" data-css-name="Skills" class="navigation-link">
               <span> Skills </span>
             </a>
           </li>
+
           <li>
-            <a href="" data-css-name="Contact" class="navigation-link">
+            <a href="#contact" data-css-name="Contact" class="navigation-link">
               <span>Contact</span>
             </a>
           </li>
@@ -52,30 +58,432 @@
       </nav>
     </header>
 
-    <main class="main">
-      <span class="had-text">Hello world - this is my portfolio page</span>
+    <main class="container" id="main">
+      <span class="had-text slide-up"
+        >Hello world - this is my portfolio page</span
+      >
       <h1 class="title">
         My name is <span>Aldovani</span> <br />I’m a Jr FullStack Developer
       </h1>
-      <p>
+      <p class="paragraph slide-down">
         Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, a
       </p>
 
-      <div class="wrapper-buttons">
-        <a href="" class="button">
+      <div class="wrapper-buttons slide-down">
+        <a href="/pdf/resume.pdf" target="_blank" class="button">
           <span>Download CV</span>
           <i data-feather="download"></i>
         </a>
-        <a href="" class="button secondary">
+        <a href="#contact" class="button secondary">
           <span> Contact me </span>
-          <i data-feather="arrow-up-right"></i>
+          <i data-feather="arrow-up-right" class="button-contact"></i>
         </a>
       </div>
     </main>
 
-    <script>
-      feather.replace();
-    </script>
+    <div class="divider">
+      <div class="line line-light"></div>
+      <div class="line line-dark">
+        <div class="content">
+          <span>UI</span>
+          <i data-feather="star"></i>
+          <span>INTERFACE</span>
+          <i data-feather="star"></i>
+          <span>UX</span>
+          <i data-feather="star"></i>
+          <span>MOTION</span>
+          <i data-feather="star"></i>
+          <span>CLIENT-SIDE</span>
+          <i data-feather="star"></i>
+          <span>SERVER-SIDE</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <span class="had-section slide-up"> about me</span>
+        <h2 class="subtitle">
+          i’m <span></span> Aldovani Henrique. A full stack developer
+        </h2>
+        <p class="paragraph slide-up">
+          Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <i data-feather="globe"></i>
+            </div>
+            <h3>Web Design</h3>
+            <p>
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i data-feather="figma"></i>
+            </div>
+            <h3>UI Design</h3>
+            <p>
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i data-feather="code"></i>
+            </div>
+            <h3>Full Stack Developer</h3>
+            <p>
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <span class="had-section slide-up">Projects</span>
+        <div class="projects-header">
+          <div>
+            <h2 class="subtitle">Featured Projects</h2>
+            <p class="slide-down">Know more about what I am doing</p>
+          </div>
+
+          <a
+            href="https://www.github.com/aldovani"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-more-projects"
+          >
+            <i data-feather="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="list-projects">
+          <div class="project">
+            <img src="assets/imgs/nullbank.png" alt="project nullBank" />
+            <span class="category">front-End</span>
+            <h3>NullBank</h3>
+            <p class="description">
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <div class="technologies">
+              <span class="technology">HTML</span>
+              <span class="technology">SCSS</span>
+              <span class="technology">JAVASCRIPT</span>
+            </div>
+            <div class="links">
+              <a href="">View the app</a>
+              <a href="">View the code</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="assets/imgs/nullbank.png" alt="project nullBank" />
+            <span class="category">front-End</span>
+            <h3>NullBank</h3>
+            <p class="description">
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <div class="technologies">
+              <span class="technology">HTML</span>
+              <span class="technology">SCSS</span>
+              <span class="technology">JAVASCRIPT</span>
+            </div>
+            <div class="links">
+              <a href="">View the app</a>
+              <a href="">View the code</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="assets/imgs/nullbank.png" alt="project nullBank" />
+            <span class="category">front-End</span>
+            <h3>NullBank</h3>
+            <p class="description">
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <div class="technologies">
+              <span class="technology">HTML</span>
+              <span class="technology">SCSS</span>
+              <span class="technology">JAVASCRIPT</span>
+            </div>
+            <div class="links">
+              <a href="">View the app</a>
+              <a href="">View the code</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="assets/imgs/nullbank.png" alt="project nullBank" />
+            <span class="category">front-End</span>
+            <h3>NullBank</h3>
+            <p class="description">
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <div class="technologies">
+              <span class="technology">HTML</span>
+              <span class="technology">SCSS</span>
+              <span class="technology">JAVASCRIPT</span>
+            </div>
+            <div class="links">
+              <a href="">View the app</a>
+              <a href="">View the code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <span class="had-section slide-down">Skills</span>
+        <h2 class="subtitle">Skills & Experience</h2>
+
+        <div>
+          <div class="slide-up">
+            <p class="paragraph">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+            <p class="paragraph">
+              Curabitur tempus urna at turpis condimentum lobortis. Ut commodo
+              efficitur neque. Ut diam quam, semper iaculis condimentum ac,
+              vestibulum eu nisl.
+            </p>
+            <p class="paragraph">
+              Curabitur tempus urna at turpis condimentum lobortis. Ut commodo
+              efficitur neque. Ut diam quam, semper iaculis condimentum ac,
+              vestibulum eu nisl.
+            </p>
+          </div>
+
+          <div class="wrapper-skills">
+            <div class="slide-up">
+              <span class="area">Front-end</span>
+              <ul class="list">
+                <li class="skill">Html</li>
+                <li class="skill">Css</li>
+                <li class="skill">Scss</li>
+                <li class="skill">javascript</li>
+                <li class="skill">react</li>
+                <li class="skill">Next</li>
+                <li class="skill">VUE</li>
+                <li class="skill">typescript</li>
+                <li class="skill">sTYLED COMPONENTS</li>
+              </ul>
+            </div>
+
+            <div class="slide-up">
+              <span class="area">Back-end</span>
+              <ul class="list">
+                <li class="skill">Node</li>
+                <li class="skill">Express</li>
+                <li class="skill">fastify</li>
+                <li class="skill">vitest</li>
+                <li class="skill">Prisma</li>
+                <li class="skill">typescript</li>
+                <li class="skill">RDBMS</li>
+              </ul>
+            </div>
+
+            <div class="slide-up">
+              <span class="area">Other</span>
+              <ul class="list">
+                <li class="skill">FIGMA</li>
+                <li class="skill">UI/UX</li>
+                <li class="skill">firebase</li>
+                <li class="skill">GIT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <span class="had-section">CONTACT</span>
+        <h2 class="subtitle">And i’d like to work with you</h2>
+
+        <span class="status">Corem ipsum dolor sit </span>
+        <h3>aldovanihcosta@gamil.com</h3>
+
+        <ul class="links">
+          <li>
+            <a
+              class="link"
+              href="https://www.behance.com/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="26"
+                viewBox="0 0 27 26"
+                fill="none"
+              >
+                <path
+                  d="M16.75 8.125C16.75 7.90951 16.8356 7.70285 16.988 7.55048C17.1403 7.3981 17.347 7.3125 17.5625 7.3125H24.0625C24.278 7.3125 24.4847 7.3981 24.637 7.55048C24.7894 7.70285 24.875 7.90951 24.875 8.125C24.875 8.34049 24.7894 8.54715 24.637 8.69952C24.4847 8.8519 24.278 8.9375 24.0625 8.9375H17.5625C17.347 8.9375 17.1403 8.8519 16.988 8.69952C16.8356 8.54715 16.75 8.34049 16.75 8.125ZM14.3125 16.0469C14.3125 17.1782 13.8631 18.2632 13.0631 19.0631C12.2632 19.8631 11.1782 20.3125 10.0469 20.3125H3.75C3.53451 20.3125 3.32785 20.2269 3.17548 20.0745C3.0231 19.9222 2.9375 19.7155 2.9375 19.5V6.5C2.9375 6.28451 3.0231 6.07785 3.17548 5.92548C3.32785 5.7731 3.53451 5.6875 3.75 5.6875H9.64062C10.4177 5.68833 11.1765 5.92373 11.8176 6.36289C12.4587 6.80205 12.9523 7.42452 13.2338 8.14885C13.5153 8.87317 13.5716 9.6656 13.3953 10.4224C13.219 11.1793 12.8183 11.8653 12.2457 12.3906C12.8763 12.77 13.3981 13.3061 13.7603 13.9468C14.1224 14.5874 14.3127 15.3109 14.3125 16.0469ZM4.5625 11.7812H9.64062C10.2332 11.7812 10.8015 11.5458 11.2206 11.1268C11.6396 10.7078 11.875 10.1395 11.875 9.54688C11.875 8.95428 11.6396 8.38596 11.2206 7.96693C10.8015 7.54791 10.2332 7.3125 9.64062 7.3125H4.5625V11.7812ZM12.6875 16.0469C12.6875 15.7001 12.6192 15.3567 12.4865 15.0364C12.3538 14.716 12.1593 14.4249 11.9141 14.1797C11.6689 13.9345 11.3778 13.74 11.0574 13.6073C10.737 13.4746 10.3936 13.4062 10.0469 13.4062H4.5625V18.6875H10.0469C10.3936 18.6875 10.737 18.6192 11.0574 18.4865C11.3778 18.3538 11.6689 18.1593 11.9141 17.9141C12.1593 17.6689 12.3538 17.3778 12.4865 17.0574C12.6192 16.737 12.6875 16.3936 12.6875 16.0469ZM25.6875 15.4375C25.6875 15.653 25.6019 15.8597 25.4495 16.012C25.2972 16.1644 25.0905 16.25 24.875 16.25H17.6641C17.817 16.8429 18.1343 17.3805 18.5795 17.8009C19.0246 18.2213 19.5794 18.5074 20.18 18.6263C20.7807 18.7451 21.4027 18.6919 21.9744 18.4728C22.5461 18.2536 23.0442 17.8774 23.4115 17.3875C23.4756 17.3021 23.5558 17.2302 23.6477 17.1759C23.7396 17.1216 23.8413 17.0859 23.9469 17.0708C24.0526 17.0558 24.1602 17.0617 24.2636 17.0882C24.367 17.1148 24.4641 17.1614 24.5495 17.2255C24.6349 17.2896 24.7068 17.3699 24.7611 17.4617C24.8154 17.5536 24.8511 17.6553 24.8662 17.761C24.8812 17.8666 24.8753 17.9742 24.8488 18.0776C24.8222 18.181 24.7756 18.2782 24.7115 18.3635C24.0167 19.2893 23.0151 19.9376 21.886 20.1925C20.7569 20.4474 19.5739 20.2922 18.5488 19.7547C17.5236 19.2172 16.7232 18.3325 16.2906 17.2588C15.8581 16.1852 15.8217 14.9926 16.188 13.8946C16.5543 12.7966 17.2993 11.8647 18.2898 11.2657C19.2802 10.6667 20.4515 10.4396 21.5941 10.6252C22.7366 10.8108 23.7758 11.3968 24.5258 12.2785C25.2758 13.1602 25.6876 14.28 25.6875 15.4375ZM23.9609 14.625C23.7819 13.9259 23.3754 13.3063 22.8053 12.8638C22.2353 12.4213 21.5341 12.1811 20.8125 12.1811C20.0909 12.1811 19.3897 12.4213 18.8197 12.8638C18.2496 13.3063 17.8431 13.9259 17.6641 14.625H23.9609Z"
+                  fill="#1361B6"
+                  class="behance-icon"
+                />
+              </svg>
+
+              Behance
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="link"
+              href="https://www.dribbble.com/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-feather="dribbble"></i>
+              Dribbble
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="link"
+              href="https://www.github.com/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-feather="github"></i>
+              Github
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-feather="linkedin"></i>
+              Linkedin
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="/pdf/resume.pdf"
+            >
+              <i data-feather="file-minus"></i>
+              Resume.pdf
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div>
+          <h3>Aldovani Henriuqe da costa</h3>
+          <span>All rights reserved®</span>
+        </div>
+        <p>Powered by 💙 by Aldovani</p>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.behance.com/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="26"
+                viewBox="0 0 27 26"
+                fill="none"
+              >
+                <path
+                  d="M16.75 8.125C16.75 7.90951 16.8356 7.70285 16.988 7.55048C17.1403 7.3981 17.347 7.3125 17.5625 7.3125H24.0625C24.278 7.3125 24.4847 7.3981 24.637 7.55048C24.7894 7.70285 24.875 7.90951 24.875 8.125C24.875 8.34049 24.7894 8.54715 24.637 8.69952C24.4847 8.8519 24.278 8.9375 24.0625 8.9375H17.5625C17.347 8.9375 17.1403 8.8519 16.988 8.69952C16.8356 8.54715 16.75 8.34049 16.75 8.125ZM14.3125 16.0469C14.3125 17.1782 13.8631 18.2632 13.0631 19.0631C12.2632 19.8631 11.1782 20.3125 10.0469 20.3125H3.75C3.53451 20.3125 3.32785 20.2269 3.17548 20.0745C3.0231 19.9222 2.9375 19.7155 2.9375 19.5V6.5C2.9375 6.28451 3.0231 6.07785 3.17548 5.92548C3.32785 5.7731 3.53451 5.6875 3.75 5.6875H9.64062C10.4177 5.68833 11.1765 5.92373 11.8176 6.36289C12.4587 6.80205 12.9523 7.42452 13.2338 8.14885C13.5153 8.87317 13.5716 9.6656 13.3953 10.4224C13.219 11.1793 12.8183 11.8653 12.2457 12.3906C12.8763 12.77 13.3981 13.3061 13.7603 13.9468C14.1224 14.5874 14.3127 15.3109 14.3125 16.0469ZM4.5625 11.7812H9.64062C10.2332 11.7812 10.8015 11.5458 11.2206 11.1268C11.6396 10.7078 11.875 10.1395 11.875 9.54688C11.875 8.95428 11.6396 8.38596 11.2206 7.96693C10.8015 7.54791 10.2332 7.3125 9.64062 7.3125H4.5625V11.7812ZM12.6875 16.0469C12.6875 15.7001 12.6192 15.3567 12.4865 15.0364C12.3538 14.716 12.1593 14.4249 11.9141 14.1797C11.6689 13.9345 11.3778 13.74 11.0574 13.6073C10.737 13.4746 10.3936 13.4062 10.0469 13.4062H4.5625V18.6875H10.0469C10.3936 18.6875 10.737 18.6192 11.0574 18.4865C11.3778 18.3538 11.6689 18.1593 11.9141 17.9141C12.1593 17.6689 12.3538 17.3778 12.4865 17.0574C12.6192 16.737 12.6875 16.3936 12.6875 16.0469ZM25.6875 15.4375C25.6875 15.653 25.6019 15.8597 25.4495 16.012C25.2972 16.1644 25.0905 16.25 24.875 16.25H17.6641C17.817 16.8429 18.1343 17.3805 18.5795 17.8009C19.0246 18.2213 19.5794 18.5074 20.18 18.6263C20.7807 18.7451 21.4027 18.6919 21.9744 18.4728C22.5461 18.2536 23.0442 17.8774 23.4115 17.3875C23.4756 17.3021 23.5558 17.2302 23.6477 17.1759C23.7396 17.1216 23.8413 17.0859 23.9469 17.0708C24.0526 17.0558 24.1602 17.0617 24.2636 17.0882C24.367 17.1148 24.4641 17.1614 24.5495 17.2255C24.6349 17.2896 24.7068 17.3699 24.7611 17.4617C24.8154 17.5536 24.8511 17.6553 24.8662 17.761C24.8812 17.8666 24.8753 17.9742 24.8488 18.0776C24.8222 18.181 24.7756 18.2782 24.7115 18.3635C24.0167 19.2893 23.0151 19.9376 21.886 20.1925C20.7569 20.4474 19.5739 20.2922 18.5488 19.7547C17.5236 19.2172 16.7232 18.3325 16.2906 17.2588C15.8581 16.1852 15.8217 14.9926 16.188 13.8946C16.5543 12.7966 17.2993 11.8647 18.2898 11.2657C19.2802 10.6667 20.4515 10.4396 21.5941 10.6252C22.7366 10.8108 23.7758 11.3968 24.5258 12.2785C25.2758 13.1602 25.6876 14.28 25.6875 15.4375ZM23.9609 14.625C23.7819 13.9259 23.3754 13.3063 22.8053 12.8638C22.2353 12.4213 21.5341 12.1811 20.8125 12.1811C20.0909 12.1811 19.3897 12.4213 18.8197 12.8638C18.2496 13.3063 17.8431 13.9259 17.6641 14.625H23.9609Z"
+                  fill="#f1f5f9"
+                  class="behance-icon"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.dribbble.com/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon"
+            >
+              <i data-feather="dribbble"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.github.com/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon"
+            >
+              <i data-feather="github"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/aldovani"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon"
+            >
+              <i data-feather="linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/pdf/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon"
+            >
+              <i data-feather="file-minus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
