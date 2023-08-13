@@ -47,7 +47,6 @@ const project = {
 ScrollReveal().reveal(".project:nth-child(1)", { ...project, delay: 500 });
 ScrollReveal().reveal(".project:nth-child(2)", { ...project, delay: 300 });
 ScrollReveal().reveal(".project:nth-child(3)", { ...project, delay: 500 });
-ScrollReveal().reveal(".project:nth-child(4)", { ...project, delay: 300 });
 
 ScrollReveal().reveal(".slide-down", slideDown);
 ScrollReveal().reveal(".slide-down", slideDown);

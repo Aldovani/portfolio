@@ -39,10 +39,14 @@
 
   .icon {
     padding: 0.8rem;
-    color: aliceblue;
-    display: block;
+    color: #fff;
+    display: flex;
     border-radius: 3.3rem;
     background: linear-gradient(135deg, #0c3d7f 0%, #123259 100%);
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   @include responsive(lg) {

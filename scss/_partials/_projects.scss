@@ -13,11 +13,19 @@
       font-size: 1.6rem;
     }
     a {
-      display: block;
+      display: flex;
+      align-items: center;
+      position: relative;
       padding: 1.2rem;
       background: map-get($colors, "primary", "main");
       color: map-get($colors, "gray", "100");
       border-radius: 100%;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
