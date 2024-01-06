@@ -1,8 +1,6 @@
 <div
  align="center">
-
-
-### Portfolio
+<h1> Portfolio</h1>
 </div>
 
 
@@ -31,8 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O NaNet consiste em um website que reúna links de recursos necessários para projetos front end, como bibliotecas de código aberto, frameworks, ferramentas de design, tutoriais e artigos úteis. O objetivo é fornecer uma lista abrangente de recursos para desenvolvedores front end, economizando tempo e esforço na busca por informações relevantes.
-
+O website é dividido em cinco seções. Inicialmente, a "Hero" proporciona uma breve apresentação sobre mim. Em seguida, a seção "Sobre Mim" oferece informações mais detalhadas sobre minha identidade e interesses. Posteriormente, na seção de "Projetos", destaco alguns dos meus principais trabalhos para proporcionar uma visão abrangente do meu portfólio. Continuando, a seção "Conhecimentos e Experiências" fornece uma análise mais profunda das minhas habilidades e experiências relevantes. Para encerrar, a seção "Contato" disponibiliza links para facilitar o contato direto comigo.
 
 
 ## 📝 Licença
