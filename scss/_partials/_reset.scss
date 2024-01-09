@@ -30,3 +30,19 @@ svg,
 img {
   width: 100%;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1361B6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0F172A;
+}

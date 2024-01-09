@@ -13,7 +13,10 @@ const slideDown = {
 
 ScrollReveal({
   mobile: false,
-}).reveal(".navigation-links li", slideUp);
+}).reveal(".navigation-links li", {
+  ...slideUp,
+  interval: 100 ,
+});
 ScrollReveal().reveal(".slide-up", slideUp);
 ScrollReveal().reveal(".title", {
   distance: "30px",
@@ -44,9 +47,6 @@ const project = {
   },
 };
 
-ScrollReveal().reveal(".project:nth-child(1)", { ...project, delay: 500 });
-ScrollReveal().reveal(".project:nth-child(2)", { ...project, delay: 300 });
-ScrollReveal().reveal(".project:nth-child(3)", { ...project, delay: 500 });
+ScrollReveal().reveal(".project", { ...project, interval: 500 });
 
-ScrollReveal().reveal(".slide-down", slideDown);
 ScrollReveal().reveal(".slide-down", slideDown);

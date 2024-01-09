@@ -20,16 +20,16 @@
   <body>
     <header class="container" id="header">
       <nav>
-        <div class="logo slide-up"></div>
+        <div class="logo slide-up hidden"></div>
 
         <ul class="navigation-links">
-          <li>
+          <li class="hidden">
             <a href="#about" data-css-name="About" class="navigation-link">
               <span> About </span>
             </a>
           </li>
 
-          <li>
+          <li class="hidden">
             <a
               href="#projects"
               data-css-name="Projects"
@@ -39,13 +39,13 @@
             </a>
           </li>
 
-          <li>
+          <li class="hidden">
             <a href="#skills" data-css-name="Skills" class="navigation-link">
               <span> Skills </span>
             </a>
           </li>
 
-          <li>
+          <li class="hidden">
             <a href="#contact" data-css-name="Contact" class="navigation-link">
               <span>Contact</span>
             </a>
@@ -59,18 +59,18 @@
     </header>
 
     <main class="container" id="main">
-      <span class="had-text slide-up"
+      <span class="had-text slide-up hidden"
         >Hello world - this is my portfolio page</span
       >
-      <h1 class="title">
+      <h1 class="title hidden">
         My name is <span>Aldovani</span> <br />I’m a Jr FullStack Developer
       </h1>
-      <p class="paragraph slide-down">
+      <p class="paragraph slide-down hidden">
         Merging the finest elements of frontend and backend to forge innovative
         user experiences.
       </p>
 
-      <div class="wrapper-buttons slide-down">
+      <div class="wrapper-buttons slide-down hidden">
         <a href="pdf/resume.pdf" target="_blank" class="button">
           <span>Download CV</span>
           <i data-feather="download"></i>
@@ -108,7 +108,7 @@
           i’m <span></span> Aldovani Henrique. A Full-Stack developer
         </h2>
         <p class="paragraph slide-up">
-          I live in São Paulo, Brazil, and I'm 19 years old. I'm studying
+          I live in São Paulo, Brazil, and I'm 20 years old. I'm studying
           Analysis and Systems Development at FATEC Taquaritinga. Every day, I
           dive deeper into the world of technology, learning how to build
           systems and solve challenges. I'm excited to explore all the
@@ -175,7 +175,7 @@
 
         <div class="list-projects">
           <aside class="project">
-            <img src="assets/imgs/nullbank.png" alt="project nullBank" />
+            <img src="assets/imgs/nullbank.png" loading="lazy" alt="project nullBank" />
             <span class="category">front-End</span>
             <h3>NullBank</h3>
             <p class="description">
@@ -198,7 +198,7 @@
           </aside>
 
           <aside class="project">
-            <img src="assets/imgs/nanet.png" alt="project nullBank" />
+            <img src="assets/imgs/nanet.png" loading="lazy" alt="project nullBank" />
             <span class="category">front-End</span>
             <h3>NaNet</h3>
             <p class="description">
@@ -218,7 +218,7 @@
           </aside>
 
           <aside class="project">
-            <img src="assets/imgs/house-hunter.png" alt="project nullBank" />
+            <img src="assets/imgs/house-hunter.png" loading="lazy" alt="project nullBank" />
             <span class="category">Full-Stack</span>
             <h3>House-Hunter</h3>
             <p class="description">
@@ -235,6 +235,28 @@
             </div>
             <div class="links">
               <a href="https://github.com/aldovani/house-hunter" target="_blank"
+                >View the code</a
+              >
+            </div>
+          </aside>
+
+          <aside class="project">
+            <img src="assets/imgs/ibico.png" loading="lazy" alt="project ibico" />
+            <span class="category">Full-Stack</span>
+            <h3>iBico</h3>
+            <p class="description">
+              Platform that mediates the search for those who need temporary
+              work with those who are interested.
+            </p>
+            <div class="technologies">
+              <span class="technology">Next</span>
+              <span class="technology">TailwindCss</span>
+              <span class="technology">Fastify</span>
+              <span class="technology">MySql</span>
+              <span class="technology">Typescript</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/aldovani/ibico" target="_blank"
                 >View the code</a
               >
             </div>
