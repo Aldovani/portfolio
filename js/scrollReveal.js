@@ -11,11 +11,9 @@ const slideDown = {
   delay: 500,
 };
 
-ScrollReveal({
-  mobile: false,
-}).reveal(".navigation-links li", {
+ScrollReveal({}).reveal(".navigation-links li", {
   ...slideUp,
-  interval: 100 ,
+  interval: 100,
 });
 ScrollReveal().reveal(".slide-up", slideUp);
 ScrollReveal().reveal(".title", {
